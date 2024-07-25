@@ -14,27 +14,33 @@ body {
 }
 
 .nav {
-    grid-column: 1/7;
+    display: flex;
+    justify-content: center; /* Center the heading horizontally */
+    align-items: center;
     background-color: #000000;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    font-size: 16px;
+    padding: 10px;
     z-index: 1000;
 }
 
 .hamburger {
+    position: absolute; /* Position the hamburger icon on the left */
+    left: 10px;
     color: white;
     font-size: 30px;
-    float: right;
-    position: absolute;
-    top: 0;
-    padding: 10px;
-    margin: 10px;
     cursor: pointer;
 }
 
+.nav h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    flex-grow: 1; /* Allow the heading to take up remaining space */
+}
 .navoverlay {
     height: 100%;
     width: 0;
@@ -73,7 +79,7 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
-    padding: 20px;
+    padding: 10px;
     height: auto;
 }
 
@@ -136,11 +142,11 @@ body {
     border-radius: 10px;
 }
 
-.button0 { top:37.5%; right: 41%;  }
+.button0 { top:37.3%; right: 41%;  }
 .button1 { top: 53.5%; right: 41%;  }
-.button2 { top: 21.5%; right: 41%;  }
+.button2 { top: 21.1%; right: 41%;  }
 .button3 { top: 66%; right: 41%;  }
-.button4 { top: 78.5%; right: 41%;  }
+.button4 { top: 78.3%; right: 41%;  }
 
 .popup {
     display: none;
@@ -365,16 +371,20 @@ body {
 
 /* Mobile devices (portrait and landscape) */
 @media only screen and (max-width: 600px) {
-
-    .heading h1 {
-        font-size: 34px;
-        margin-left: 10px;
+    .nav {
+        font-size: 16px; 
     }
 
     .hamburger {
-        margin: 5px 10px 5px 5px;
         font-size: 25px;
+        left: 5px; /* Adjust left margin */
     }
+
+    .nav h1 {
+        font-size: 24px;
+        margin-right: 0;;    
+    }
+
 
     .content h3 {
         margin-top: 80px;
@@ -387,9 +397,10 @@ body {
 
     .maincontent {
         width: auto;
-        height: auto;
+        height: 450px; ;
         font-size: 16px;
-        margin: 10px;
+        margin: 10px 5px;
+        overflow: scroll;
     }
 
     .buttons button{
@@ -398,6 +409,12 @@ body {
         border-radius: 20px;
         background-color: #b0b0b0;
     }
+    .button0 { top:38.3%; right: 41%;  }
+.button1 { top: 53.5%; right: 41%;  }
+.button2 { top: 23%; right: 41%;  }
+.button3 { top: 64.5%; right: 41%;  }
+.button4 { top: 77%; right: 41%;  }
+    
     .image img {
         width: 100%;
 
