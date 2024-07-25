@@ -1,8 +1,7 @@
-body h1{
+body h1 {
     text-align: center;
     font-size: 40px;
     font-family: "Allerta Stencil", Sans-serif;
-    /* background-color:black; */
     color: white;
 }
 
@@ -14,26 +13,26 @@ body {
     padding: 0;
 }
 
-.nav{
+.nav {
     grid-column: 1/7;
     background-color: #000000;
-    position:fixed;
+    position: fixed;
     width: 100%;
-    top:0;
+    top: 0;
     left: 0;
-    justify-content:space-between;
     font-size: 16px;
     z-index: 1000;
 }
 
-.hamburger{
+.hamburger {
     color: white;
     font-size: 30px;
     float: right;
     position: absolute;
-    top:0;
-    padding:10px;
-    margin:10px;
+    top: 0;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
 }
 
 .navoverlay {
@@ -65,22 +64,11 @@ body {
     transition: 0.3s;
 }
 
-.nav-overlay-content a:hover, .nav-overlay-content a:focus {
+.nav-overlay-content a:hover,
+.nav-overlay-content a:focus {
     color: #f1f1f1;
 }
 
-
-/* Media query for mobile screens */
-@media screen and (max-height: 450px) {
-    .nav-overlay-content a {
-        font-size: 20px;
-    }
-    .navclosebutton {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
 .container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -90,18 +78,17 @@ body {
 }
 
 .content {
-
     grid-column: 2 / 6;
     font-size: 18px;
     line-height: 1.6;
     padding-top: 80px;
 }
 
-.content h3, .content h5 {
+.content h3,
+.content h5 {
     text-align: center;
     padding: 10px;
     margin: 10px 0;
-    
 }
 
 .flex {
@@ -110,36 +97,39 @@ body {
     flex-direction: row;
 }
 
-.image img{
+.image img {
     border: 5px black solid;
     margin: 0 auto;
     display: flex;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
 }
 
-.image{
+.image {
     position: relative;
     padding: 5px;
     margin: 20px auto;
     display: block;
     background-color: rgba(0, 0, 0, 0.993);
-    /* height:fit-content; */
-    /* margin-top: 20px; */
 }
 
-
-.hide{
+.hide {
     display: none;
 }
-.button0:hover + .hide{
+
+.button0:hover+.hide {
     display: block;
-    color:#ff9393 ;
+    color: #ff9393;
 }
 
-.button0, .button1, .button2, .button3, .button4 {
+.button0,
+.button1,
+.button2,
+.button3,
+.button4 {
     position: absolute;
-    /* background-image: url("radiobuttonon.webp"); */
     background-size: cover;
     height: 20px;
     width: 20px;
@@ -152,8 +142,7 @@ body {
 .button3 { top: 66%; right: 41%;  }
 .button4 { top: 78.5%; right: 41%;  }
 
-
-.popup{
+.popup {
     display: none;
 }
 
@@ -194,17 +183,22 @@ body {
     font-weight: bold;
 }
 
-.close-btn:hover{
+.close-btn:hover {
     background-color: red;
     transition: 0.3s ease;
 }
 
-.video{
+.video {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding:10px;
-    margin:30px 0;
+    padding: 10px;
+    margin: 30px 0;
+    gap: 5px;
+}
+
+.video h3 {
+    padding: 5px;
 }
 
 .quiz {
@@ -212,9 +206,8 @@ body {
     background-color: rgba(238, 239, 209, 0.53);
     text-align: center;
     padding: 20px;
-    margin:30px 0;
+    margin: 30px 0;
 }
-
 
 .quiz .btn-container {
     display: flex;
@@ -222,7 +215,8 @@ body {
     align-items: center;
 }
 
-.quiz .next-btn, .quiz .result {
+.quiz .next-btn,
+.quiz .result {
     margin-top: 20px;
 }
 
@@ -230,8 +224,6 @@ body {
     font-size: 25px;
     color: #000000;
     font-weight: 600;
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-
 }
 
 .btn {
@@ -239,7 +231,7 @@ body {
     color: #222;
     font-weight: 500;
     width: 50%;
-    border: 1px solid#222;
+    border: 1px solid #222;
     padding: 10px;
     margin: 10px 0;
     text-align: left;
@@ -269,11 +261,12 @@ body {
     border: 1px black solid;
 }
 
-#next-btn:hover{
+#next-btn:hover {
     color: rgb(255, 255, 255);
     background-color: #333;
     transition: 0.2s all;
 }
+
 .correct {
     background: #9aeabc;
 }
@@ -283,7 +276,7 @@ body {
 }
 
 .additional-resources {
-    margin: 20px 0 ;
+    margin: 20px 0;
 }
 
 .additional-resources h3 {
@@ -306,9 +299,9 @@ body {
 
 .social-share {
     display: flex;
-    gap: 10px; /* Space between links */
-    justify-content: center; /* Center the links horizontally */
-    margin-top: 20px; /* Space above the social share section */
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .social-share a {
@@ -316,15 +309,13 @@ body {
     font-size: 20px;
     padding: 10px 15px;
     border-radius: 5px;
-    /* border: 1px solid #0077b5; */
     transition: background-color 0.3s, color 0.3s;
 }
 
-.social-share a:hover{
+.social-share a:hover {
     font-size: large;
 }
 
-/* Specific styling for different platforms */
 .social-share a.twitter {
     color: #1DA1F2;
     border-color: #1DA1F2;
@@ -348,8 +339,8 @@ body {
 .social-share h3 {
     justify-content: center;
     font-size: 18px;
-   border-right: #000 1px solid;
-   margin:0 20px;
+    border-right: #000 1px solid;
+    margin: 0 20px;
 }
 
 #topBtn {
